@@ -1,19 +1,27 @@
 body{
   margin:0;
-  font-family: sans-serif;
+  font-family:sans-serif;
   background:#f8f9fa;
   text-align:center;
 }
 
+/* Hero full-bleed */
 .hero{
+  width:100%;
+  margin:0;
   padding:0;
 }
 
 .hero-logo{
-  width:100%;
-  max-width:1200px;
+  width:100vw;        /* تمام عرض صفحه */
+  max-width:100%;
   height:auto;
   display:block;
-  margin:0 auto;
-  border-radius:16px;
+  margin:0;
+  border-radius:0;    /* لبه‌به‌لبه، بدون گردی */
+}
+
+/* برای اینکه اسکرول افقی نیفتد */
+html, body{
+  overflow-x:hidden;
 }
