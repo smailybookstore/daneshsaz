@@ -1,16 +1,19 @@
-.hero {
-  text-align: center;
-  padding: 80px 0 60px;
-  background: linear-gradient(to bottom, #ffffff, #f5f7fa);
+body{
+  margin:0;
+  font-family: sans-serif;
+  background:#f8f9fa;
+  text-align:center;
 }
 
-.hero-logo {
-  width: 70%;
-  max-width: 900px;
+.hero{
+  padding:0;
 }
 
-@media (max-width: 768px) {
-  .hero-logo {
-    width: 90%;
-  }
+.hero-logo{
+  width:100%;
+  max-width:1200px;
+  height:auto;
+  display:block;
+  margin:0 auto;
+  border-radius:16px;
 }
