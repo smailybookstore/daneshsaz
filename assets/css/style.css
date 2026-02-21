@@ -1,27 +1,25 @@
 body{
-  margin:0;
-  font-family:sans-serif;
-  background:#f8f9fa;
-  text-align:center;
+    margin:0;
+    font-family:sans-serif;
+    background:#f8f9fa;
+    text-align:center;
 }
 
 /* Hero full-bleed */
 .hero{
-  width:100%;
-  margin:0;
-  padding:0;
+    width:100%;
+    margin:0;
+    padding:0;
 }
 
 .hero-logo{
-  width:100vw;        /* تمام عرض صفحه */
-  max-width:100%;
-  height:auto;
-  display:block;
-  margin:0;
-  border-radius:0;    /* لبه‌به‌لبه، بدون گردی */
+    width:100%;
+    height:auto;
+    display:block;
+    margin:0;
 }
 
-/* برای اینکه اسکرول افقی نیفتد */
+/* جلوگیری از اسکرول افقی */
 html, body{
-  overflow-x:hidden;
+    overflow-x:hidden;
 }
