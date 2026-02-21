@@ -1,5 +1,5 @@
 async function loadProducts() {
-  const res = await fetch("/data/products.json?ts=" + Date.now());
+  const res = await fetch("../../data/products.json?ts=" + Date.now());
   if (!res.ok) throw new Error("Cannot load products.json");
   return res.json();
 }
