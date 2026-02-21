@@ -1,1 +1,39 @@
 
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>فروشگاه PDF | دانش‌ساز</title>
+  <style>
+    body{margin:0;font-family:system-ui;background:#f6f6f6;color:#111}
+    .wrap{max-width:720px;margin:0 auto;padding:18px}
+    h1{font-size:28px;margin:10px 0 6px}
+    .sub{opacity:.75;margin:0 0 16px;line-height:1.8}
+    .bar{display:flex;gap:10px;align-items:center;margin:12px 0 18px}
+    select{flex:1;padding:12px;border-radius:12px;border:1px solid #ddd;background:#fff;font-size:14px}
+    .grid{display:grid;grid-template-columns:1fr;gap:12px}
+    .p-card{background:#fff;border-radius:16px;padding:16px;box-shadow:0 6px 18px rgba(0,0,0,.06)}
+    .p-card h3{margin:0 0 8px;font-size:18px}
+    .p-meta{font-size:13px;opacity:.75;margin-bottom:10px}
+    .p-desc{margin:0 0 10px;line-height:1.9;opacity:.9}
+    .p-price{margin:0 0 12px;font-weight:700}
+    .p-btn{display:block;text-align:center;padding:12px 14px;border-radius:14px;background:#111;color:#fff;text-decoration:none}
+    .empty{padding:14px;text-align:center;opacity:.7}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>فروشگاه PDF</h1>
+    <p class="sub">انتخاب کنید، ببینید، و سریع دریافت کنید. بعضی محصولات در حال توسعه‌اند.</p>
+
+    <div class="bar">
+      <select id="catFilter"></select>
+    </div>
+
+    <div id="grid" class="grid"></div>
+  </div>
+
+  <script src="/assets/js/store.js"></script>
+</body>
+</html>
