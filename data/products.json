@@ -1,0 +1,26 @@
+{
+  "currency": "IRR",
+  "updated": "2026-02-21",
+  "products": [
+    {
+      "id": "WRP-001",
+      "title": "Writing a Winning Proposal",
+      "category": "مهارت‌های پژوهشی و نگارشی",
+      "level": "Standard",
+      "price": 990000,
+      "status": "active",
+      "file": "/assets/files/writing-winning-proposal.pdf",
+      "description": "راهنمای عملی نگارش پروپوزال برنده."
+    },
+    {
+      "id": "RCH-001",
+      "title": "Mastering Research Methods",
+      "category": "مهارت‌های پژوهشی و نگارشی",
+      "level": "Plus",
+      "price": 1490000,
+      "status": "coming_soon",
+      "file": "",
+      "description": "در حال توسعه (نسخه پلاس با تمرین و قالب‌ها)."
+    }
+  ]
+}
