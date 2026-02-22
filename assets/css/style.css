@@ -51,7 +51,7 @@ html{
 body{
   margin: 0;
   font-family: var(--font);
-  line-height: var(--lh);
+  line-height: var(center);
   color: var(--text);
   background: var(--bg);
 }
