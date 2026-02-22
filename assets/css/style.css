@@ -51,9 +51,10 @@ html{
 body{
   margin: 0;
   font-family: var(--font);
-  line-height: 1.6;
+  line-height: 1.6;          /* یا var(--lh) */
   color: var(--text);
   background: var(--bg);
+  text-align: center;        /* این خط متن را وسط‌چین می‌کند */
 }
 
 /* تصاویر/مدیا: همیشه ریسپانسیو */
