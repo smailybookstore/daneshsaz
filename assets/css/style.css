@@ -115,6 +115,13 @@ html, body{ overflow-x: clip; } /* بهتر از hidden در اکثر مرورگ
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   padding: clamp(14px, 2vw, 18px);
+
+  width: 100%;           /* ADD */
+  max-width: 720px;      /* ADD (عدد قابل تنظیم) */
+}
+  
+width: 100%;           /* ADD */
+  max-width: 720px;      /* ADD (عدد قابل تنظیم) */
 }
 
 .card:hover{
@@ -127,6 +134,7 @@ html, body{ overflow-x: clip; } /* بهتر از hidden در اکثر مرورگ
   display: grid;
   gap: 18px;
   grid-template-columns: 1fr;
+  justify-items: center; /* ADD THIS */
 }
 
 @media (min-width: 860px){
@@ -182,7 +190,7 @@ html, body{ overflow-x: clip; } /* بهتر از hidden در اکثر مرورگ
   gap: 14px;
   align-items: center;
   justify-content: center;
-}
+  min-width: 0; /* critical: prevents overflow */
 }
 
 .cover{
@@ -195,7 +203,7 @@ html, body{ overflow-x: clip; } /* بهتر از hidden در اکثر مرورگ
 
 .book-meta{
   flex: 1 1 auto;
-  min-width: 0;
+  min-width: 0; /* critical */
   text-align: center;
 }
 
@@ -218,6 +226,8 @@ html, body{ overflow-x: clip; } /* بهتر از hidden در اکثر مرورگ
   flex-wrap: wrap;
   gap: 10px;
   align-items: center;
+  justify-content: center; /* ADD THIS */
+}
 }
 
 .tiny{
@@ -231,7 +241,7 @@ html, body{ overflow-x: clip; } /* بهتر از hidden در اکثر مرورگ
 @media (max-width: 859px){
   .book-top{
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
   .cover{
     width: 100%;
