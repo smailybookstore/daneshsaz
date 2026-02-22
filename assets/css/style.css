@@ -99,7 +99,8 @@ html, body{ overflow-x: clip; } /* بهتر از hidden در اکثر مرورگ
 }
 
 .hero-logo{
-  width: 100%;
+ display: block;
+   width: 100%;
   max-width: 1400px;      /* جلوی بزرگ‌شدن بیش از حد در دسکتاپ */
   margin-inline: auto;
   border-radius: var(--radius);
