@@ -93,14 +93,10 @@ html, body{ overflow-x: clip; } /* بهتر از hidden در اکثر مرورگ
 /* =========================
    3) Hero / Brand section
    ========================= */
-.hero{
-  margin: 0;
-  padding: clamp(14px, 2.5vw, 28px) 0;
-}
-
-.hero-logo{ display:block; }
-   width: 100%;
-  max-width: 1400px;      /* جلوی بزرگ‌شدن بیش از حد در دسکتاپ */
+.hero-logo{
+  display: block;
+  width: 100%;
+  max-width: 1400px;
   margin-inline: auto;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
