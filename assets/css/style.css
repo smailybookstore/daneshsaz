@@ -98,8 +98,7 @@ html, body{ overflow-x: clip; } /* بهتر از hidden در اکثر مرورگ
   padding: clamp(14px, 2.5vw, 28px) 0;
 }
 
-.hero-logo{
- display: block;
+.hero-logo{ display:block; }
    width: 100%;
   max-width: 1400px;      /* جلوی بزرگ‌شدن بیش از حد در دسکتاپ */
   margin-inline: auto;
