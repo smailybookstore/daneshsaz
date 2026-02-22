@@ -180,8 +180,9 @@ html, body{ overflow-x: clip; } /* بهتر از hidden در اکثر مرورگ
 .book-top{
   display: flex;
   gap: 14px;
-  align-items: flex-start;
-  min-width: 0; /* critical */
+  align-items: center;
+  justify-content: center;
+}
 }
 
 .cover{
@@ -194,7 +195,8 @@ html, body{ overflow-x: clip; } /* بهتر از hidden در اکثر مرورگ
 
 .book-meta{
   flex: 1 1 auto;
-  min-width: 0; /* critical */
+  min-width: 0;
+  text-align: center;
 }
 
 .title{
