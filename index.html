@@ -1,47 +1,292 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>دانش‌ساز</title>
-
-    <link rel="stylesheet" href="/daneshsaz/assets/css/style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دانش‌ساز | آکادمی دیجیتال ابزارهای پژوهشی</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: Tahoma, Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.8;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 30px;
+            margin-bottom: 40px;
+        }
+        .header h1 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .header .subtitle {
+            color: #555;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .header .tagline {
+            color: #999;
+            font-size: 0.95em;
+            font-style: italic;
+        }
+        .product {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-right: 5px solid #667eea;
+        }
+        .product h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+        .product .english-name {
+            color: #888;
+            font-size: 1em;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+        .product .target {
+            background: #e7f3ff;
+            padding: 12px 18px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-weight: bold;
+            color: #333;
+        }
+        .product p {
+            margin: 15px 0;
+            color: #444;
+        }
+        .product h3 {
+            color: #667eea;
+            margin: 25px 0 15px;
+            font-size: 1.3em;
+        }
+        .product ul {
+            list-style: none;
+            padding-right: 0;
+        }
+        .product ul li {
+            padding: 10px 0;
+            padding-right: 30px;
+            position: relative;
+            color: #444;
+        }
+        .product ul li:before {
+            content: "✅";
+            position: absolute;
+            right: 0;
+        }
+        .price-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            margin: 30px 0;
+        }
+        .price-box .label {
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+        .price {
+            font-size: 2.2em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .price-note {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+        .btn {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            padding: 16px 45px;
+            text-decoration: none;
+            border-radius: 12px;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: all 0.3s;
+            margin: 10px;
+        }
+        .btn:hover {
+            background: #218838;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        }
+        .btn-secondary {
+            background: #6c757d;
+        }
+        .btn-secondary:hover {
+            background: #5a6268;
+        }
+        .bonus-box {
+            background: #fff3cd;
+            padding: 20px;
+            border-radius: 12px;
+            margin: 25px 0;
+            border-right: 4px solid #ffc107;
+        }
+        .bonus-box strong {
+            color: #856404;
+        }
+        .international-box {
+            background: #e7f3ff;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 30px 0;
+            border-right: 4px solid #007bff;
+        }
+        .international-box h3 {
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+        .international-box code {
+            background: #f8f9fa;
+            padding: 10px;
+            display: block;
+            border-radius: 6px;
+            word-break: break-all;
+            margin: 10px 0;
+            font-size: 0.9em;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 25px;
+            border-top: 2px solid #eee;
+            color: #666;
+        }
+        .footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .badges {
+            margin: 20px 0;
+        }
+        .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #333;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            margin: 4px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-<section class="hero">
-    <img src="/daneshsaz/assets/images/daneshsaz-hero.jpg"
-     class="hero-logo"
-     alt="دانش‌ساز"
-     loading="lazy"
-     decoding="async">
-</section>
+    <div class="container">
+        <div class="header">
+            <h1>🧠 دانش‌ساز</h1>
+            <p class="subtitle">آکادمی دیجیتال ابزارهای شناختی و پژوهشی</p>
+            <p class="tagline">ما کتاب نمی‌فروشیم؛ ما «سیستم‌عامل‌های تولید علم» ارائه می‌دهیم.</p>
+        </div>
 
-<div class="section">
-    <h3>مسیرهای یادگیری</h3>
-    <a class="button" href="#">پرواز پژوهش</a>
-    <a class="button" href="#">پرواز دیجیتال</a>
-    <a class="button" href="#">پرواز مسیر تحصیلی</a>
-</div>
+        <div class="product">
+            <h2>🥇 جعبه‌ابزار مهندسی پروپوزال برنده</h2>
+            <p class="english-name">WRPE Academic Toolkit</p>
+            
+            <div class="target">
+                🎯 مخصوص دانشجویان دکتری، پژوهشگران و اساتید مهندسی و علوم داده
+            </div>
 
-<div class="section">
-    <h3>فروشگاه PDF</h3>
-    <a class="button light" href="#">مهارت‌های پژوهشی</a>
-    <a class="button light" href="#">مسیر تحصیلی و مهاجرت</a>
-    <a class="button light" href="#">مدیریت پروژه</a>
-    <a class="button light" href="#">مهارت‌های دیجیتال</a>
-</div>
+            <p>
+                آیا پروپوزال شما ریسک رد شدن توسط داوران بین‌المللی را دارد؟
+                <br>
+                آیا می‌دانید داوران Q1 به جای «فرم»، به دنبال «مدیریت ریسک» هستند؟
+            </p>
 
-<div class="section">
-    <h3>در حال توسعه</h3>
-    <a class="button light" href="#">چالش‌ها</a>
-    <a class="button light" href="#">بسته‌های ویژه</a>
-    <a class="button light" href="#">درخواست محتوا</a>
-</div>
+            <h3>📦 محتویات این جعبه‌ابزار:</h3>
+            <ul>
+                <li>سند مرجع کامل WRPE (PDF حرفه‌ای ۱۲ فصلی)</li>
+                <li>۴ چک‌لیست اکسل (شکاف پژوهشی، مدل ریاضی، دفاع، مقاله Q1)</li>
+                <li>کدهای پایتون آماده اجرا (Pyomo MILP + NSGA-II + گزارش‌ساز خودکار)</li>
+                <li>Case صنعتی کامل با تحلیل حساسیت و نمودار پارتو</li>
+                <li>ویدئوی آموزشی نحوه استفاده از ابزارها</li>
+                <li>پشتیبانی مستقیم طراح سیستم</li>
+            </ul>
 
-<footer>
-© Daneshsaz | ساختار نسخه 1.0
-</footer>
+            <div class="badges">
+                <span class="badge"> MILP واقعی</span>
+                <span class="badge">🤖 NSGA-II</span>
+                <span class="badge">📊 Robust Optimization</span>
+                <span class="badge">📈 Pareto Analysis</span>
+                <span class="badge">📝 Auto Report</span>
+            </div>
 
+            <div class="price-box">
+                <div class="label">💎 سرمایه‌گذاری برای دریافت این Toolkit</div>
+                <div class="price">۲۰,۰۰۰ تومان</div>
+                <div class="price-note">
+                    (معادل هزینه یک جلسه مشاوره ۰ دقیقه‌ای، اما با ماندگاری مادام‌العمر)
+                </div>
+            </div>
+
+            <div style="text-align: center; margin: 30px 0;">
+                <a href="https://t.me/YOUR_TELEGRAM_ID" class="btn">
+                    📩 دریافت از طریق تلگرام
+                </a>
+            </div>
+
+            <div class="bonus-box">
+                <strong>🎁 هدیه ویژه:</strong>
+                <br>
+                خریداران این نسخه، آپدیت‌های آینده (ماژول‌های جدید کدنویسی، کیس‌استادی‌های جدید) را رایگان دریافت خواهند کرد.
+            </div>
+        </div>
+
+        <div class="international-box">
+            <h3>🌍 مخاطب بین‌الملل</h3>
+            <p>
+                برای خرید با ارزهای دیجیتال (USDT) و دسترسی به نسخه انگلیسی:
+            </p>
+            <p style="margin: 15px 0;">
+                <strong>آدرس USDT (TRC20):</strong>
+                <code>YOUR_USDT_ADDRESS_HERE</code>
+            </p>
+            <p>
+                پس از پرداخت، اسکرین‌شات را به ایمیل/تلگرام زیر ارسال کنید:
+                <br>
+                📧 <strong>ایمیل:</strong> YOUR_EMAIL@example.com
+                <br>
+                📱 <strong>تلگرام:</strong> <a href="https://t.me/YOUR_TELEGRAM_ID">@YOUR_TELEGRAM_ID</a>
+            </p>
+        </div>
+
+        <div class="footer">
+            <p>
+                <strong>پشتیبانی مستقیم طراح سیستم:</strong>
+                <br>
+                📱 تلگرام: <a href="https://t.me/YOUR_TELEGRAM_ID">@YOUR_TELEGRAM_ID</a>
+            </p>
+            <p style="margin-top: 20px; font-size: 0.9em;">
+                طراحی‌شده با رویکرد مهندسی سیستم‌ها
+                <br>
+                دانش‌ساز © 2026
+            </p>
+        </div>
+    </div>
 </body>
 </html>
